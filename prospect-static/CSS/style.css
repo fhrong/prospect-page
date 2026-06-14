@@ -51,7 +51,57 @@ a   { color: inherit; text-decoration: none; }
 .glow-text  { text-shadow: 0 0 24px var(--tech-glow); }
 .glow-box   { box-shadow: 0 0 50px rgba(62,224,184,.18); }
 .bg-surface { background: var(--surface); }
+/* ============================================================
+   PROSPECT SEARCH
+   ============================================================ */
 
+.prospect-form {
+  margin-top: 2rem;
+}
+
+.prospect-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto 1.5rem;
+}
+
+.prospect-fields input {
+  width: 100%;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+
+  color: var(--fg);
+  font-size: .95rem;
+  font-family: inherit;
+
+  padding: 1rem 1.25rem;
+
+  transition:
+    border-color .2s ease,
+    box-shadow .2s ease,
+    transform .2s ease;
+}
+
+.prospect-fields input::placeholder {
+  color: var(--muted);
+}
+
+.prospect-fields input:hover {
+  border-color: rgba(62,224,184,.25);
+}
+
+.prospect-fields input:focus {
+  outline: none;
+  border-color: var(--tech);
+  box-shadow: 0 0 0 4px rgba(62,224,184,.12);
+}
+
+.prospect-form .btn {
+  min-width: 240px;
+}
 /* ============================================================
    BUTTONS
    ============================================================ */
